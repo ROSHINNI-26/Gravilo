@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Gravilo - Connect Rural Workers</title>
+    <link rel="stylesheet" href="log.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Side - Hero Section -->
+        <div class="hero-section">
+            <div class="logo">
+                <img src="./image_1.svg" alt="" srcset="" width="170" height="90">
+            </div>
+            <div class="hero-content">
+                <h1>We are <span>GRAVILO</span></h1>
+                <p>Empowering rural workers by connecting them with local job opportunities.</p>
+            </div>
+        </div>
+
+        <!-- Right Side - Form Section -->
+        <div class="form-section">
+            <div class="form-container">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="login">Login</button>
+                    <button class="tab-btn" data-tab="register">Register</button>
+                </div>
+
+                <!-- Login Form -->
+                <form id="loginForm" class="form active">
+                    <div class="form-group">
+                        <label for="loginUsername">Username</label>
+                        <input type="text" id="loginUsername" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <button type="submit" class="submit-btn">Log In</button>
+                </form>
+
+                <!-- Registration Form -->
+                <form id="registerForm" class="form">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="skillType">Skill Type</label>
+                        <select id="skillType" required>
+                            <option value="">Select your skill</option>
+                            <option value="laborer">Laborer</option>
+                            <option value="electrician">Electrician</option>
+                            <option value="mechanic">Mechanic</option>
+                            <option value="carpenter">Carpenter</option>
+                            <option value="farmer">Farmer</option>
+                            <option value="plumber">Plumber</option>
+                            <option value="mason">Mason</option>
+                            <option value="painter">Painter</option>
+                            <option value="driver">Driver</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="log.js"></script>
+</body>
+</html>
